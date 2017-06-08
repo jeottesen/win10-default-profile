@@ -103,9 +103,9 @@ in the Shell folder paste your start layout file and name it LayoutModification
 ## Applying the new Default Profile
 I like to keep the original Default profile for troubleshooting purposes. So I just leave it alone.
 
-Copy your Default Profile to the `C:\Users` directory and rename it to whatever you want. As an example I will be renaming it `DefaultNew`. Now under its security settings make sure it has the `Users` group has the permissions `Read & Execute, List Folder Contents, and Read`. Make sure to apply it to all subfolders as well.
+Copy your Default Profile to the `C:\Users` directory and rename it to whatever you want. As an example I will be renaming it `DefaultOrg`. Now under its security settings make sure it has the `Users` group has the permissions `Read & Execute, List Folder Contents, and Read`. Make sure to apply it to all subfolders as well.
 
-In the registry under `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList` change the Default Key to point to your new DefaultProfile `$SystemDrive%\Users\DefaultNew`.
+In the registry under `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList` change the Default Key to point to your new DefaultProfile `$SystemDrive%\Users\DefaultOrg`.
 
 Just change that back whenever you want to go back to the old Default Profile.
 
