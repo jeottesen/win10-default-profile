@@ -1,6 +1,8 @@
 # Windows 10 Default Profile set up
 These are the instructions on how to setup a customized default profile for Windows 10. The `scripts` folder contains some scripts that will automate the application process of the default profile. You will still need to use these instructions to create a default profile first. 
 
+This process has been tested on Windows 10 1607 and Windows 10 2016 LTSB.
+
 ## Creating the Default Profile through sysprep
 On a new install of Windows log in to the administrator and open the command line. 
 Run 
