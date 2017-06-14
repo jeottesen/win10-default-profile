@@ -1,5 +1,5 @@
 # Windows 10 Default Profile set up
-These are the instructions on how to setup a customized default profile for Windows 10. The `scripts` folder contains some scripts that will automate the application process of the default profile. You will still need to use these instructions to create a default profile first. 
+These are the instructions on how to setup a customized default profile for Windows 10. The [scripts](scripts/) folder contains some scripts that will automate the application process of the default profile. You will still need to use these instructions to create a default profile first. 
 
 This process has been tested on Windows 10 1607 and Windows 10 2016 LTSB.
 
@@ -11,7 +11,7 @@ cd \Windows\System32\Sysprep
 sysprep /audit /reboot
 ```
 
-**Note:** If you log in as another user and windows has a chance to update its apps it won’t let you sysprep. 
+**Note:** If you log in as another user and windows has a chance to update its apps it won’t let you sysprep. You will have to delete all user profiles and reset the Windows Update cache.
 
 **Note:** Don't bother setting the Default apps or Start Menu and Taskbar settings. Those are handled a different way.
 
@@ -33,7 +33,7 @@ These are the settings I change.
 
 After you are done setting everything up go to the Windows Explorer Right click Quick Access and select Options. Then under click Clear File Explorer history. Clear all browser histories as well.
 
-Create the `unattend.xml` file and paste this in there. You can also just use the one in this repository.
+Create the `unattend.xml` file and paste this in there. [You can also just use the one in this repository.](unattend.xml)
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend">
@@ -85,7 +85,7 @@ Then at the bottom right after `</DefaultLayoutOverride>` add
 ```
 You can modify the `<taskbar:TaskbarPinList>` to include whatever you want. 
 
-Look at `start-layout.xml` for a full example. 
+Look at [start-layout.xml](start-layout.xml) for a full example. 
 
 Now we need to check to make sure the file is valid. Open PowerShell and run:<br />
 ```
