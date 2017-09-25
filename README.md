@@ -23,9 +23,11 @@ These are the settings I change.
 * `Settings > System > Notifications` Disable Get tips, and suggestions
 * `Windows Explorer > File > Change Folder and search options > View` Disable Show sync provider notifications
 * Add Google Chrome, Gmail, Word, PowerPoint, and Excel Icons to the desktop
-* Arrange Icons on the desktop
+* Arrange Icons on the desktop.<br />
+**Note:** This will not keep if you change resolutions or text size later.
 * `Right click taskbar > Cortana` change to show Cortana icon
-* Set default hompage for all browsers
+* Set default hompage for all browsers <br />
+**Note:** You will need to use group policy or a [master preferences](https://www.chromium.org/administrators/configuring-other-preferences) file for chrome.
 * Change Firefox search to Google and remove unnecessary search providers
 * Make sure Firefox and IE don’t ask to be the default all the time
 * Make a small registry change to stop Windows from installing suggested apps. run this in PowerShell command
